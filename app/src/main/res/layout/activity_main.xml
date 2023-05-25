@@ -15,7 +15,7 @@
         app:layout_constraintGuide_begin="204dp" />
 
     <Button
-        android:id="@+id/pigg"
+        android:id="@+id/btn_pigg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pig"
@@ -25,7 +25,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
     <Button
-        android:id="@+id/coww"
+        android:id="@+id/btn_coww"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cow"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
     <Button
-        android:id="@+id/sheep"
+        android:id="@+id/btn_sheep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <Button
-        android:id="@+id/chicken"
+        android:id="@+id/btn_chicken"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chicken"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <Button
-        android:id="@+id/horse"
+        android:id="@+id/btn_horse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Horse"
@@ -67,7 +67,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <Button
-        android:id="@+id/duck"
+        android:id="@+id/btn_duck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Duck"
@@ -91,31 +91,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="335dp" />
+        app:layout_constraintGuide_begin="291dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="95dp" />
+        app:layout_constraintGuide_begin="85dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="195dp" />
+        app:layout_constraintGuide_begin="174dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="443dp" />
+        app:layout_constraintGuide_begin="409dp" />
 
     <Button
-        android:id="@+id/turkey"
+        android:id="@+id/btn_turkey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Turkey"
@@ -125,7 +125,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <Button
-        android:id="@+id/fish"
+        android:id="@+id/btn_fish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fish"
@@ -144,20 +144,14 @@
         app:layout_constraintGuide_begin="544dp" />
 
     <Button
-        android:id="@+id/duck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Duck"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="650dp" />
-
-    <Button
-        android:id="@+id/goose"
+        android:id="@+id/btn_goose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Goose"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="650dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
@@ -165,4 +159,34 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="641dp" />
+
+    <Button
+        android:id="@+id/btn_dog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/btn_rooster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rooster"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <Button
+        android:id="@+id/btn_goat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
 </androidx.constraintlayout.widget.ConstraintLayout>
