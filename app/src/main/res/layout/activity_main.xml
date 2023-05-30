@@ -14,17 +14,19 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="204dp" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_pigg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="Pig"
+        android:scaleType="fitCenter"
+        android:background="@drawable/btnimage_jose_pig"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_coww"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +36,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_sheep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,7 +47,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_chicken"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,7 +57,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_horse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +68,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_duck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,7 +78,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
-    <TextView
+    <ImageButton
         android:id="@+id/textView"
         android:layout_width="137dp"
         android:layout_height="25dp"
@@ -114,7 +116,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="409dp" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_turkey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -124,7 +126,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_fish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -143,7 +145,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="544dp" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_goose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -160,7 +162,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="641dp" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_dog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -170,7 +172,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_rooster"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -180,7 +182,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_goat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -189,4 +191,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

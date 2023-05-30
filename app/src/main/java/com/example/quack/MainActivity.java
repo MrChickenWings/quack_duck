@@ -2,302 +2,266 @@ package com.example.quack;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button  btnPigg;
-    private Button btnCoww;
-    private Button btnSheep;
-    private Button btnChicken;
-    private Button btnHorse;
-    private Button btnDuck;
-    private Button btnTurkey;
-    private Button btnFish;
-    private Button btnDog;
-    private Button btnGoose;
-    private Button btnRooster;
-    private Button btnGoat;
+    private ImageButton btnPigg;
+    private ImageButton btnCoww;
+    private ImageButton btnSheep;
+    private ImageButton btnChicken;
+    private ImageButton btnHorse;
+    private ImageButton btnDuck;
+    private ImageButton btnTurkey;
+    private ImageButton btnFish;
+    private ImageButton btnDog;
+    private ImageButton btnGoose;
+    private ImageButton btnRooster;
+    private ImageButton btnGoat;
+    Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnPigg = findViewById(R.id.btn_pigg);
-        btnCoww = findViewById(R.id.btn_coww);
-        btnSheep = findViewById(R.id.btn_sheep);
-        btnChicken = findViewById(R.id.btn_chicken);
-        btnHorse = findViewById(R.id.btn_horse);
-        btnDuck = findViewById(R.id.btn_duck);
-        btnTurkey = findViewById(R.id.btn_turkey);
-        btnFish = findViewById(R.id.btn_fish);
-        btnDog = findViewById(R.id.btn_dog);
-        btnGoose = findViewById(R.id.btn_goose);
-        btnRooster = findViewById(R.id.btn_rooster);
-        btnGoat = findViewById(R.id.btn_goat);
+        btnPigg = (ImageButton) findViewById(R.id.btn_pigg);
+        btnCoww = (ImageButton) findViewById(R.id.btn_coww);
+        btnSheep = (ImageButton) findViewById(R.id.btn_sheep);
+        btnChicken = (ImageButton) findViewById(R.id.btn_chicken);
+        btnHorse = (ImageButton) findViewById(R.id.btn_horse);
+        btnDuck = (ImageButton) findViewById(R.id.btn_duck);
+        btnTurkey = (ImageButton) findViewById(R.id.btn_turkey);
+        btnFish = (ImageButton) findViewById(R.id.btn_fish);
+        btnDog = (ImageButton) findViewById(R.id.btn_dog);
+        btnGoose = (ImageButton) findViewById(R.id.btn_goose);
+        btnRooster = (ImageButton) findViewById(R.id.btn_rooster);
+        btnGoat = (ImageButton) findViewById(R.id.btn_goat);
 
         btnPigg.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-              playPigg();
+            public void onClick(View view) {
+                btnPigg.setImageResource(R.drawable.btnimage_jose_pig_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_pigaaa);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnPigg.setImageResource(R.drawable.btnimage_jose_pig);
+                    }
+                });
             }
         });
 
         btnCoww.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playCoww();
+            public void onClick(View view) {
+                btnCoww.setImageResource(R.drawable.btnimage_jose_cow_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_cow);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnCoww.setImageResource(R.drawable.btnimage_jose_cow);
+                    }
+                });
             }
         });
 
         btnSheep.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playSheep();
+            public void onClick(View view) {
+                btnCoww.setImageResource(R.drawable.btnimage_jose_sheep_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_sheep);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnSheep.setImageResource(R.drawable.btnimage_jose_sheep);
+                    }
+                });
             }
         });
 
+
         btnChicken.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playChicken();
+            public void onClick(View view) {
+                btnChicken.setImageResource(R.drawable.btnimage_jose_chicken_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_chicken);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnChicken.setImageResource(R.drawable.btnimage_jose_chicken);
+                    }
+                });
             }
         });
 
         btnHorse.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playHorse();
+            public void onClick(View view) {
+                btnHorse.setImageResource(R.drawable.btnimage_jose_horse_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_horse);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnHorse.setImageResource(R.drawable.btnimage_jose_horse);
+                    }
+                });
             }
         });
+
         btnDuck.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playDuck();
+            public void onClick(View view) {
+                btnDuck.setImageResource(R.drawable.btnimage_jose_duck_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_duck);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnDuck.setImageResource(R.drawable.btnimage_jose_duck);
+                    }
+                });
             }
         });
 
         btnTurkey.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playTurkey();
+            public void onClick(View view) {
+                btnTurkey.setImageResource(R.drawable.btnimage_jose_turkey_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_cow);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnTurkey.setImageResource(R.drawable.btnimage_jose_turkey_clicked);
+                    }
+                });
             }
         });
 
         btnFish.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playFishNuke();
+            public void onClick(View view) {
+                btnFish.setImageResource(R.drawable.btnimage_jose_fish_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_fishnuke);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnFish.setImageResource(R.drawable.btnimage_jose_fish);
+                    }
+                });
             }
         });
 
         btnDog.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playDog();
+            public void onClick(View view) {
+                btnDog.setImageResource(R.drawable.btnimage_jose_dog_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_dog);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnPigg.setImageResource(R.drawable.btnimage_jose_dog);
+                    }
+                });
             }
         });
 
         btnGoose.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playGoose();
+            public void onClick(View view) {
+                btnGoose.setImageResource(R.drawable.btnimage_jose_goose_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_goouse);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnGoose.setImageResource(R.drawable.btnimage_jose_goose);
+                    }
+                });
             }
         });
 
         btnRooster.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playRooster();
+            public void onClick(View view) {
+                btnRooster.setImageResource(R.drawable.btnimage_jose_rooster_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_rooster);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnRooster.setImageResource(R.drawable.btnimage_jose_rooster);
+                    }
+                });
             }
         });
 
         btnGoat.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-                playGoat();
+            public void onClick(View view) {
+                btnGoat.setImageResource(R.drawable.btnimage_jose_goat_clicked);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_goat);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                        btnGoat.setImageResource(R.drawable.btnimage_jose_goat);
+                    }
+                });
             }
         });
 
+
     }
-
-
-    private void playPigg() {
-        MediaPlayer mp = MediaPlayer.create(context: this, R.raw.sound_pigaaa);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-    private void playCoww() {
-        MediaPlayer mp = MediaPlayer.create(context: this, R.raw.sound_cow);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-
-
-    private void playSheep() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_sheep);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-
-    private void playChicken() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_chicken);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-    private void playHorse() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_horse):
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-    private void playSheep() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_sheep):
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-    private void playDuck() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_duck);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-    private void playTurkey() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_turkey);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-    private void playFishNuke() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_fishnuke);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-    private void playDog() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_dog);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-    private void playGoose() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_goouse);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-    private void playRooster() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_rooster);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-    private void playGoat() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_goat);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
 }
 
-
-
-}
