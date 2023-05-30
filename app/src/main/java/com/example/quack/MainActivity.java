@@ -137,7 +137,6 @@ public class MainActivity extends AppCompatActivity {
                 mp = null;
             }
         });
-
     }
 
     private void playCoww() {
@@ -151,8 +150,6 @@ public class MainActivity extends AppCompatActivity {
                 mp = null;
             }
         });
-
-
     }
 
 
@@ -185,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playHorse() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_horse);
+        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_horse):
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -198,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playSheep() {
-        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_sheep);
+        MediaPlayer mp = MediaPlayer.create(context:this, R.raw.sound_sheep):
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -298,3 +295,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+}
+
+
+
+}
