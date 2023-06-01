@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnTurkey.setImageResource(R.drawable.btnimage_quack_turkey);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_cow);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_turkey);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
