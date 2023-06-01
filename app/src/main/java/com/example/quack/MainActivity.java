@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         btnPigg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnPigg.setImageResource(R.drawable.btnimage_jose_pig_clicked);
+                btnPigg.setImageResource(R.drawable.btnimage_quack_pig_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_pigaaa);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnPigg.setImageResource(R.drawable.btnimage_jose_pig);
+                        btnPigg.setImageResource(R.drawable.btnimage_quack_pig);
                     }
                 });
             }
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         btnCoww.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnCoww.setImageResource(R.drawable.btnimage_jose_cow_clicked);
+                btnCoww.setImageResource(R.drawable.btnimage_quack_cow_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_cow);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnCoww.setImageResource(R.drawable.btnimage_jose_cow);
+                        btnCoww.setImageResource(R.drawable.btnimage_quack_cow);
                     }
                 });
             }
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         btnSheep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnCoww.setImageResource(R.drawable.btnimage_jose_sheep_clicked);
+                btnCoww.setImageResource(R.drawable.btnimage_quack_sheep_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_sheep);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnSheep.setImageResource(R.drawable.btnimage_jose_sheep);
+                        btnSheep.setImageResource(R.drawable.btnimage_quack_sheep);
                     }
                 });
             }
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         btnChicken.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnChicken.setImageResource(R.drawable.btnimage_jose_chicken_clicked);
+                btnChicken.setImageResource(R.drawable.btnimage_quack_chicken_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_chicken);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnChicken.setImageResource(R.drawable.btnimage_jose_chicken);
+                        btnChicken.setImageResource(R.drawable.btnimage_quack_chicken);
                     }
                 });
             }
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         btnHorse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnHorse.setImageResource(R.drawable.btnimage_jose_horse_clicked);
+                btnHorse.setImageResource(R.drawable.btnimage_quack_horse_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_horse);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnHorse.setImageResource(R.drawable.btnimage_jose_horse);
+                        btnHorse.setImageResource(R.drawable.btnimage_quack_horse);
                     }
                 });
             }
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         btnDuck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnDuck.setImageResource(R.drawable.btnimage_jose_duck_clicked);
+                btnDuck.setImageResource(R.drawable.btnimage_quack_duck_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_duck);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnDuck.setImageResource(R.drawable.btnimage_jose_duck);
+                        btnDuck.setImageResource(R.drawable.btnimage_quack_duck);
                     }
                 });
             }
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
         btnTurkey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnTurkey.setImageResource(R.drawable.btnimage_jose_turkey_clicked);
+                btnTurkey.setImageResource(R.drawable.btnimage_quack_turkey);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_cow);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnTurkey.setImageResource(R.drawable.btnimage_jose_turkey_clicked);
+                        btnTurkey.setImageResource(R.drawable.btnimage_quack_turkey);
                     }
                 });
             }
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         btnFish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnFish.setImageResource(R.drawable.btnimage_jose_fish_clicked);
+                btnFish.setImageResource(R.drawable.btnimage_quack_fish_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_fishnuke);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnFish.setImageResource(R.drawable.btnimage_jose_fish);
+                        btnFish.setImageResource(R.drawable.btnimage_quack_fish);
                     }
                 });
             }
@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
         btnDog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnDog.setImageResource(R.drawable.btnimage_jose_dog_clicked);
+                btnDog.setImageResource(R.drawable.btnimage_quack_dog_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_dog);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -201,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnPigg.setImageResource(R.drawable.btnimage_jose_dog);
+                        btnPigg.setImageResource(R.drawable.btnimage_quack_dog);
                     }
                 });
             }
@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
         btnGoose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnGoose.setImageResource(R.drawable.btnimage_jose_goose_clicked);
+                btnGoose.setImageResource(R.drawable.btnimage_quack_goose_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_goouse);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnGoose.setImageResource(R.drawable.btnimage_jose_goose);
+                        btnGoose.setImageResource(R.drawable.btnimage_quack_goose);
                     }
                 });
             }
@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
         btnRooster.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnRooster.setImageResource(R.drawable.btnimage_jose_rooster_clicked);
+                btnRooster.setImageResource(R.drawable.btnimage_quack_rooster_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_rooster);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -237,7 +237,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnRooster.setImageResource(R.drawable.btnimage_jose_rooster);
+                        btnRooster.setImageResource(R.drawable.btnimage_quack_rooster);
                     }
                 });
             }
@@ -246,7 +246,7 @@ public class MainActivity extends AppCompatActivity {
         btnGoat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnGoat.setImageResource(R.drawable.btnimage_jose_goat_clicked);
+                btnGoat.setImageResource(R.drawable.btnimage_quack_goat_clicked);
                 MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_goat);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -255,7 +255,7 @@ public class MainActivity extends AppCompatActivity {
                         mp.stop();
                         mp.release();
                         mp = null;
-                        btnGoat.setImageResource(R.drawable.btnimage_jose_goat);
+                        btnGoat.setImageResource(R.drawable.btnimage_quack_goat);
                     }
                 });
             }
