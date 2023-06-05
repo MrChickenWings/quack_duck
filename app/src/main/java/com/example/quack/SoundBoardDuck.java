@@ -3,14 +3,12 @@ package com.example.quack;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
-import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+public class SoundBoardDuck extends AppCompatActivity {
 
     private ImageButton btnPigg;
     private ImageButton btnCoww;
@@ -29,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.soundboard_duck);
 
         btnPigg = (ImageButton) findViewById(R.id.btn_pigg);
         btnCoww = (ImageButton) findViewById(R.id.btn_coww);
@@ -48,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnPigg.setImageResource(R.drawable.btnimage_quack_pig_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_pigaaa);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_pigaaa);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -66,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnCoww.setImageResource(R.drawable.btnimage_quack_cow_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_cow);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_cow);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -84,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnCoww.setImageResource(R.drawable.btnimage_quack_sheep_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_sheep);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_sheep);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -103,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnChicken.setImageResource(R.drawable.btnimage_quack_chicken_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_chicken);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_chicken);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -121,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnHorse.setImageResource(R.drawable.btnimage_quack_horse_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_horse);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_horse);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -139,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnDuck.setImageResource(R.drawable.btnimage_quack_duck_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_duck);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_duck);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -157,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnTurkey.setImageResource(R.drawable.btnimage_quack_turkey);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_turkey);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_turkey);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -175,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnFish.setImageResource(R.drawable.btnimage_quack_fish_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_fishnuke);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_fishnuke);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -193,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnDog.setImageResource(R.drawable.btnimage_quack_dog_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_dog);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_dog);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -211,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnGoose.setImageResource(R.drawable.btnimage_quack_goose_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_goouse);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_goouse);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -229,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnRooster.setImageResource(R.drawable.btnimage_quack_rooster_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_rooster);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_rooster);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -247,7 +245,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnGoat.setImageResource(R.drawable.btnimage_quack_goat_clicked);
-                MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_goat);
+                MediaPlayer mp = MediaPlayer.create(context, R.raw.sample_duck_goat);
                 mp.start();
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
